@@ -1,6 +1,6 @@
 # Maximum-Covariance-Unfolding-Regression
 
-This is the code repository for Code Repository for the paper Maximum Covariance Unfolding Regression: A Novel Covariate-based Manifold Learning Approach for Point Cloud Data by Qian Wang and Kamran Paynabar at Georgia Tech.
+This is the code repository for the paper Maximum Covariance Unfolding Regression: A Novel Covariate-based Manifold Learning Approach for Point Cloud Data by Qian Wang and Kamran Paynabar at Georgia Tech.
 
 ## Instructions:
 
