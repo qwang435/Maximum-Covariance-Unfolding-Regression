@@ -11,9 +11,9 @@ def reconEval(label,Y_tilda,Y_til_recon,title):
 
     ###### visualize Y_tilda & Y_til_recon ###########
     Y_tilda_tran = pcplot(label, Y_tilda, title)
-    plt.savefig('/results/'+title+'1.png')
+    plt.savefig('./results/'+title+'1.png')
     Y_til_recon_tran = pcplot(label, Y_til_recon, title)
-    plt.savefig('/results/'+title+'2.png')
+    plt.savefig('./results/'+title+'2.png')
 
     d_vec = np.sqrt(np.sum((Y_tilda_tran - Y_til_recon_tran)**2, axis=1))
 

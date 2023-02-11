@@ -11,8 +11,8 @@ from pcplot import *
 
 ###### read and preprocess ############
 
-X = np.array(loadmat('/data/XY.mat')['X'])
-Y = np.array(loadmat('/data/XY.mat')['Y'])
+X = np.array(loadmat('./data/XY.mat')['X'])
+Y = np.array(loadmat('./data/XY.mat')['Y'])
 Xlabel = np.around(X,decimals=2)
 
 n1 = np.size(X,0)
@@ -27,8 +27,8 @@ X = (X - Xmean) #/ Xstd
 #Ystd = np.std(Y, axis=0)
 #Y = Y_center/np.mean(Ystd)
 
-Xtest = np.array(loadmat('/data/XYtest.mat')['Xtest'])
-Ytest = np.array(loadmat('/data/XYtest.mat')['Ytest'])
+Xtest = np.array(loadmat('./data/XYtest.mat')['Xtest'])
+Ytest = np.array(loadmat('./data/XYtest.mat')['Ytest'])
 
 pca0 = PCA(n_components=100)
 Y0 = pca0.fit_transform(Y)
@@ -93,7 +93,7 @@ plt.xlabel('X axis')
 plt.ylabel('Y axis')
 plt.title('PCA')
 plt.colorbar()
-plt.savefig('/results/regcompdistance.png')
+plt.savefig('./results/regcompdistance.png')
 
 #compPlot(XpredErrArray1,XpredErrArray2,XpredErrArray3,'Nominal X optimization error')
 #plt.savefig('./plots/X opt.png')
@@ -103,6 +103,6 @@ print('optimal x from MVU:', Xpred2)
 print('optimal x from PCA:', Xpred3)
 
 compPlot(reconErrArray1,reconErrArray2,reconErrArray3,'Relative Y_tilda reconstruction error')
-plt.savefig('/results/regcomp.png')
+plt.savefig('./results/regcomp.png')
 
 plt.show()
