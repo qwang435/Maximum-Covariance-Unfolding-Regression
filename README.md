@@ -6,7 +6,7 @@ This is the code repository for the paper Maximum Covariance Unfolding Regressio
 
 Put the data 'XY.mat' in the folder "data" and run the file main.py. The result plots will show in the folder "results". The data should be stored as numpy arrays following the format as mentioned in the paper. The optimal process variables learned for the nominal shape in the data 'XYtest.mat' will be printed.
 
-## Software and Packages Requirements:
+## Software and Package Requirements:
 Python 3.7.11 
   
 Numpy 1.21.6  
